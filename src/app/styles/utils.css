@@ -1,0 +1,25 @@
+.card_service {
+    position: relative;
+}
+
+.card_service:hover::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+
+.card_service:hover .more_text {
+    display: block;
+}
+
+.card_service:hover .card_image {
+    display: none;
+}
+
+.card_service:hover .card_line {
+    background-color: white;
+}

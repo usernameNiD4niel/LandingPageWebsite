@@ -18,10 +18,12 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.className}`}>
-				<header className="flex m-14 mt-10 justify-between">
+				<header className="flex m-14 mt-10 justify-between scroll-smooth">
 					<Navbar />
 				</header>
-				<main>{children}</main>
+				<main className="flex flex-col justify-center items-center">
+					{children}
+				</main>
 				<footer>{/* <Footer /> */}</footer>
 			</body>
 		</html>

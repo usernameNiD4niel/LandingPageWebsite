@@ -17,13 +17,13 @@ export default function Navbar() {
 				<ul className="flex justify-between space-x-8 mr-3">
 					<li>
 						<Link
-							href="/"
+							href="#home"
 							className="text-[#098A5B] border-b-2 border-[#098A5B] pb-2">
 							Home
 						</Link>
 					</li>
 					<li>
-						<Link href="/" className="hover:text-[#098A5B]">
+						<Link href="#services" className="hover:text-[#098A5B]">
 							Services
 						</Link>
 					</li>
