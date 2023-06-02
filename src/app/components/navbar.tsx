@@ -4,14 +4,9 @@ import Link from "next/link";
 export default function Navbar() {
 	return (
 		<>
-			<Link href="/">
-				<Image
-					src="/next.svg"
-					height={90}
-					width={90}
-					className="dark:invert flex justify-center align-middle bg-white"
-					alt="logo"
-				/>
+			<Link href="/" className="flex gap-2 justify-center items-center">
+				<Image src="/logo.svg" height={35} width={35} alt="logo" />
+				<p className="font-bold text-[#098A5B] text-2xl">DVR</p>
 			</Link>
 			<nav className="flex flex-1 justify-end">
 				<ul className="flex justify-between space-x-8 mr-3">

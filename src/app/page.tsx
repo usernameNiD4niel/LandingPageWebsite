@@ -4,13 +4,15 @@ import LineComponent from "./components/line";
 import CarouselImage from "./components/carousel";
 import About, { SubAboutDescription } from "./components/about";
 import CardsTestimonial from "./components/testimonial";
+import LatestNews from "./components/latest_news";
+import ProjectInMind from "./components/project_in_mind";
 
 export default function Home() {
 	const className: string =
 		"w-72 h-72 bg-[#31313147] px-5 flex flex-col justify-center cursor-pointer ease-in duration-300 mt-12 hover:bg-[#313131]";
 
 	const servicesClass: string =
-		"bg-[#313131] w-72 h-72 px-5 flex flex-col justify-center cursor-pointer ease-out hover:ease-in duration-300 mt-12 hover:bg-[#098A5B] card_service";
+		"bg-[#313131] w-72 h-72 px-5 flex flex-col justify-center transition cursor-pointer ease-out delay-300 hover:ease-in duration-300 mt-12 hover:bg-[#098A5B] card_service";
 
 	return (
 		<>
@@ -171,6 +173,15 @@ export default function Home() {
 				<div className="flex w-[1050px] mt-[50px] justify-center items-center">
 					<CardsTestimonial className="flex flex-col justify-center items-center relative mb-10" />
 				</div>
+			</section>
+			{/* Latest News */}
+			<section className="w-full my-7 px-5 flex justify-center items-center flex-col">
+				<LatestNews />
+				<LineComponent className={"w-1 h-14 bg-[#098A5B] my-10"} />
+			</section>
+			{/* Project in Mind */}
+			<section className="w-full flex flex-col justify-center items-center my-10">
+				<ProjectInMind />
 			</section>
 		</>
 	);
