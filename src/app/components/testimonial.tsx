@@ -9,7 +9,7 @@ interface CardProps {
 const IndividualCard = ({ first_name, last_name, src }: CardProps) => {
 	return (
 		<>
-			<div className="bg-[#101017] flex flex-col justify-center items-center py-10 px-12 pb-16 mr-10 mb-8">
+			<div className="bg-[#101017] flex flex-col justify-center items-center py-10 px-12 pb-16 mx-10 mb-8 md:mx-0">
 				<Image src="/comment.svg" width={90} height={90} alt="comment icon" />
 				<p className="font-normal text-sm my-8 text-justify">
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non deserunt
@@ -24,7 +24,7 @@ const IndividualCard = ({ first_name, last_name, src }: CardProps) => {
 					<Image src="/star.svg" width={20} height={20} alt="comment icon" />
 				</div>
 			</div>
-			<div className="absolute left-[37%] -bottom-10 flex flex-col justify-center items-center">
+			<div className="absolute -bottom-10 flex flex-col justify-center items-center">
 				<Image src={src} width={60} height={60} alt="person picture" />
 				<p className="font-bold text-sm text-center">
 					{first_name} <br />

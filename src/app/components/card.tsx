@@ -21,14 +21,14 @@ const Card = ({
 			<Image
 				src={icon}
 				alt="airplane paper icon"
-				width={50}
+				width={40}
 				className="card_image"
-				height={50}
+				height={40}
 			/>
 			<h2 className="text-xl font-bold mt-3">{title}</h2>
 			<div className="w-16 h-1 mt-2 bg-[#098A5B] card_line"></div>
 			<p className="text-sm mt-5">
-				{description}{" "}
+				{description}
 				<span className="hidden more_text">
 					{hiddenMessage && hiddenMessage}
 				</span>

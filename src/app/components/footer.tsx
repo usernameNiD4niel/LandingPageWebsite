@@ -20,12 +20,13 @@ const ContactUsRow = ({ icon, text, alt }: ContactUsProps): JSX.Element => {
 
 const Footer = (): JSX.Element => {
 	const servicesClass: string = "font-extralight mb-4 text-sm";
+	const utilityClass: string = "flex flex-col justify-center items-center";
 	return (
 		<>
-			<section className="flex justify-center gap-[8rem] my-5">
+			<section className="flex justify-center gap-7 my-5 flex-col items-center sm:flex-row sm:gap-x-10 xl:gap-x-20">
 				<Image src="/logo.svg" width={70} height={70} alt="logo" />
 
-				<div>
+				<div className={utilityClass}>
 					<h3 className="font-bold">CONTACT US</h3>
 					<ContactUsRow
 						icon="/phone.svg"
@@ -48,14 +49,14 @@ const Footer = (): JSX.Element => {
 						alt="work icon"
 					/>
 				</div>
-				<div>
+				<div className={utilityClass}>
 					<h3 className="font-bold mb-4">OUR SERVICES</h3>
 					<p className={servicesClass}>Responsive Web App</p>
 					<p className={servicesClass}>Beautiful UI/UX Design</p>
 					<p className={servicesClass}>Seemless Mobile Apps</p>
 					<p className={servicesClass}>Scable & Maintainable SASS</p>
 				</div>
-				<div>
+				<div className={utilityClass}>
 					<h3 className="font-bold mb-4">About Us</h3>
 					<p className={servicesClass}>Who we are</p>
 					<p className={servicesClass}>Our philosophy</p>
@@ -63,9 +64,9 @@ const Footer = (): JSX.Element => {
 				</div>
 			</section>
 			<hr />
-			<div className="w-full flex justify-evenly my-3">
+			<div className="w-full flex justify-center items-center my-3 flex-col">
 				<p className="font-light text-sm">Copyright 2023 Daniel Rey</p>
-				<div className="flex w-[60%] gap-3 justify-end">
+				<div className="flex items-center mt-5 gap-3 justify-center">
 					{/* Social Media Icons */}
 					<Link href="https://www.instagram.com/dany3lr3y/" target="_blank">
 						<Image

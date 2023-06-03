@@ -44,7 +44,7 @@ const LatestNews = (): JSX.Element => {
 					CHECK OUT SOME OF OUR NEWS
 				</p>
 			</div>
-			<div className="w-full flex justify-between gap-3">
+			<div className="w-full flex flex-col justify-between gap-3 sm:gap-y-10 md:flex-row">
 				<LatestNewsCard
 					src="/vr.svg"
 					title="Could this VR sketching tool be coming of age for the designers in future ?"
