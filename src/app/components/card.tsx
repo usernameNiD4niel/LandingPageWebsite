@@ -25,9 +25,9 @@ const Card = ({
 				className="card_image"
 				height={40}
 			/>
-			<h2 className="text-xl font-bold mt-3">{title}</h2>
+			<h2 className="text-xl font-bold mt-3 text-slate-100">{title}</h2>
 			<div className="w-16 h-1 mt-2 bg-[#098A5B] card_line"></div>
-			<p className="text-sm mt-5">
+			<p className="text-sm mt-5 text-slate-100">
 				{description}
 				<span className="hidden more_text">
 					{hiddenMessage && hiddenMessage}

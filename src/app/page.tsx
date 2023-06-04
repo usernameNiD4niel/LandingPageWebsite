@@ -9,7 +9,7 @@ import ProjectInMind from "./components/project_in_mind";
 
 export default function Home() {
 	const className: string =
-		"w-72 h-72 py-10 bg-[#31313147] px-5 flex flex-col justify-center cursor-pointer ease-in duration-300 mt-12 hover:bg-[#313131] sm:w-[350px] xl:max-w-[400px]";
+		"w-72 h-72 py-10 bg-[#31313147] px-5 flex flex-col justify-center text-slate-100 cursor-pointer ease-in duration-300 mt-12 hover:bg-[#313131] sm:w-[350px] xl:max-w-[400px]";
 
 	const servicesClass: string =
 		"bg-[#313131] w-72 h-72 py-10 px-5 flex flex-col justify-center transition cursor-pointer ease-out delay-300 hover:ease-in duration-300 mt-12 sm:mt-0 hover:bg-[#098A5B] card_service";
@@ -31,7 +31,7 @@ export default function Home() {
 						<p className="text-[#098A5B] text-sm text-center lg:font-bold">
 							CREATIVE MIND, CREATIVE WORKS.
 						</p>
-						<h1 className="text-4xl font-bold mt-3 text-center sm:text-start sm:text-5xl xl:text-6xl">
+						<h1 className="text-4xl font-bold mt-3 text-center sm:text-start sm:text-5xl xl:text-6xl text-slate-100">
 							We Are Digital <br /> Agency
 						</h1>
 						<button
@@ -68,7 +68,7 @@ export default function Home() {
 				className="flex flex-col justify-center items-center mt-[100px] py-10 lg:items-start">
 				<div className="flex items-center space-x-3">
 					<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
-					<h2 className="font-bold text-3xl">Services</h2>
+					<h2 className="font-bold text-3xl text-slate-100">Services</h2>
 				</div>
 				<p className="text-[#098A5B] text-sm my-2">OUR SERVICES FOR CLIENTS</p>
 				<div className="flex flex-col justify-center items-center sm:grid sm:grid-cols-2 sm:gap-2 sm:mt-10 lg:grid-cols-3 lg:gap-4">
@@ -125,7 +125,7 @@ export default function Home() {
 					<div>
 						<div className="flex items-center space-x-3">
 							<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
-							<h2 className="font-bold text-3xl ">Works</h2>
+							<h2 className="font-bold text-3xl text-slate-100">Works</h2>
 						</div>
 						<p className="text-[#098A5B] text-[1rem] mt-2">
 							THINGS WE&apos;VE MADE
@@ -147,7 +147,7 @@ export default function Home() {
 				<div className="flex flex-col items-center lg:items-start md:w-[71%]">
 					<div className="flex items-center space-x-3">
 						<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
-						<h2 className="font-bold text-3xl">About</h2>
+						<h2 className="font-bold text-3xl text-slate-100">About</h2>
 					</div>
 					<p className="text-[#098A5B] text-sm mt-2">
 						WE ARE MORE THAN DIGITAL AGENCY
@@ -166,7 +166,7 @@ export default function Home() {
 				<div className="mt-[50px] flex justify-between items-center flex-col">
 					<div className="flex items-center justify-center space-x-3">
 						<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
-						<h2 className="font-bold text-3xl">Testimonials</h2>
+						<h2 className="font-bold text-3xl text-slate-100">Testimonials</h2>
 					</div>
 					<p className="text-[#098A5B] text-sm mt-2">
 						WE ARE MORE THAN DIGITAL AGENCY

@@ -12,14 +12,16 @@ const ContactUsRow = ({ icon, text, alt }: ContactUsProps): JSX.Element => {
 		<>
 			<p className="flex my-3">
 				<Image src={icon} width={20} height={20} alt={alt} />
-				<span className="ml-2 font-extralight text-sm">{text}</span>
+				<span className="ml-2 font-extralight text-slate-100 text-sm">
+					{text}
+				</span>
 			</p>
 		</>
 	);
 };
 
 const Footer = (): JSX.Element => {
-	const servicesClass: string = "font-extralight mb-4 text-sm";
+	const servicesClass: string = "font-extralight mb-4 text-sm text-slate-100";
 	const utilityClass: string = "flex flex-col justify-center items-center";
 	return (
 		<>
@@ -27,7 +29,7 @@ const Footer = (): JSX.Element => {
 				<Image src="/logo.svg" width={70} height={70} alt="logo" />
 
 				<div className={utilityClass}>
-					<h3 className="font-bold">CONTACT US</h3>
+					<h3 className="font-bold text-slate-100">CONTACT US</h3>
 					<ContactUsRow
 						icon="/phone.svg"
 						text="+63 9876543212"
@@ -50,14 +52,14 @@ const Footer = (): JSX.Element => {
 					/>
 				</div>
 				<div className={utilityClass}>
-					<h3 className="font-bold mb-4">OUR SERVICES</h3>
+					<h3 className="font-bold mb-4 text-slate-100">OUR SERVICES</h3>
 					<p className={servicesClass}>Responsive Web App</p>
 					<p className={servicesClass}>Beautiful UI/UX Design</p>
 					<p className={servicesClass}>Seemless Mobile Apps</p>
 					<p className={servicesClass}>Scable & Maintainable SASS</p>
 				</div>
 				<div className={utilityClass}>
-					<h3 className="font-bold mb-4">About Us</h3>
+					<h3 className="font-bold mb-4 text-slate-100">About Us</h3>
 					<p className={servicesClass}>Who we are</p>
 					<p className={servicesClass}>Our philosophy</p>
 					<p className={servicesClass}>How we work</p>
@@ -65,7 +67,9 @@ const Footer = (): JSX.Element => {
 			</section>
 			<hr />
 			<div className="w-full flex justify-center items-center my-3 flex-col">
-				<p className="font-light text-sm">Copyright 2023 Daniel Rey</p>
+				<p className="font-light text-sm text-slate-100">
+					Copyright 2023 Daniel Rey
+				</p>
 				<div className="flex items-center mt-5 gap-3 justify-center">
 					{/* Social Media Icons */}
 					<Link href="https://www.instagram.com/dany3lr3y/" target="_blank">

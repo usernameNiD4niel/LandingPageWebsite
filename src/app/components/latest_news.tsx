@@ -23,11 +23,11 @@ const LatestNewsCard = ({
 				className="transition delay-75 group-hover:scale-105"
 			/>
 			<div className="p-5 max-w-[400px]">
-				<p className="font-bold">{title}</p>
-				<p className="font-thin py-5">{description}</p>
+				<p className="font-bold text-slate-100">{title}</p>
+				<p className="font-thin py-5 text-slate-100">{description}</p>
 				<button
 					type="button"
-					className="border transition delay-100 border-[#098A5B] p-3 hover:bg-[#098A5B] hover:text-white">
+					className="border transition text-slate-100 delay-100 border-[#098A5B] p-3 hover:bg-[#098A5B] hover:text-slate-100">
 					Read More
 				</button>
 			</div>
@@ -39,7 +39,9 @@ const LatestNews = (): JSX.Element => {
 	return (
 		<>
 			<div className="w-full flex flex-col justify-center items-center py-10">
-				<h3 className="font-bold text-3xl text-center">Latest News</h3>
+				<h3 className="font-bold text-3xl text-center text-slate-100">
+					Latest News
+				</h3>
 				<p className="text-center text-sm text-[#098A5B]">
 					CHECK OUT SOME OF OUR NEWS
 				</p>
