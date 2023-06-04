@@ -9,7 +9,7 @@ import ProjectInMind from "./components/project_in_mind";
 
 export default function Home() {
 	const className: string =
-		"w-72 py-10 bg-[#31313147] px-5 flex flex-col justify-center cursor-pointer ease-in duration-300 mt-12 hover:bg-[#313131] sm:w-[350px] xl:max-w-[400px]";
+		"w-72 h-72 py-10 bg-[#31313147] px-5 flex flex-col justify-center cursor-pointer ease-in duration-300 mt-12 hover:bg-[#313131] sm:w-[350px] xl:max-w-[400px]";
 
 	const servicesClass: string =
 		"bg-[#313131] w-72 h-72 py-10 px-5 flex flex-col justify-center transition cursor-pointer ease-out delay-300 hover:ease-in duration-300 mt-12 sm:mt-0 hover:bg-[#098A5B] card_service";
@@ -24,9 +24,9 @@ export default function Home() {
 					alt="hero background image"
 					width={1200}
 					height={900}
-					className="w-screen absolute -z-50 top-10"
+					className="w-screen absolute z-1 top-10 bg-white"
 				/>
-				<div className="w-full px-14 mt-[50px] sm:mt-[100px]">
+				<div className="w-full px-14 mt-[50px] sm:mt-[100px] z-10 md:px-28">
 					<div className="flex flex-col justify-center items-center sm:items-start">
 						<p className="text-[#098A5B] text-sm text-center lg:font-bold">
 							CREATIVE MIND, CREATIVE WORKS.
@@ -143,8 +143,8 @@ export default function Home() {
 				<LineComponent className="w-1 h-[3rem] mt-10 bg-[#098A5B]" />
 			</section>
 			{/* About */}
-			<section className="mt-[100px] py-10 flex flex-col items-center justify-center lg:items-start">
-				<div className="flex flex-col items-center lg:items-start lg:ml-5">
+			<section className="mt-[100px] py-10 flex flex-col items-center justify-center">
+				<div className="flex flex-col items-center lg:items-start md:w-[71%]">
 					<div className="flex items-center space-x-3">
 						<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
 						<h2 className="font-bold text-3xl">About</h2>
@@ -162,20 +162,18 @@ export default function Home() {
 				</div>
 			</section>
 			{/* Testimonials */}
-			<section className="w-full flex justify-center flex-col items-center py-10 bg-[#313131] md:items-start">
-				<div className="mt-[50px] flex justify-between items-center md:mx-14">
-					<div>
-						<div className="flex items-center justify-center space-x-3">
-							<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
-							<h2 className="font-bold text-3xl">Testimonials</h2>
-						</div>
-						<p className="text-[#098A5B] text-sm mt-2">
-							WE ARE MORE THAN DIGITAL AGENCY
-						</p>
+			<section className="w-full flex justify-center flex-col items-center py-10 bg-[#313131] md:items-center lg:items-start md:px-12 lg:px-48 sm:px-0">
+				<div className="mt-[50px] flex justify-between items-center flex-col">
+					<div className="flex items-center justify-center space-x-3">
+						<LineComponent className={"w-14 h-1 bg-[#098A5B]"} />
+						<h2 className="font-bold text-3xl">Testimonials</h2>
 					</div>
+					<p className="text-[#098A5B] text-sm mt-2">
+						WE ARE MORE THAN DIGITAL AGENCY
+					</p>
 				</div>
-				<div className="mt-[50px] flex flex-col max-w-[400px] justify-center items-center md:flex-row md:gap-3 md:px-5 md:max-w-full">
-					<CardsTestimonial className="flex flex-col justify-center items-center relative mb-24 md:w-[60%] lg:w-[45%]" />
+				<div className="mt-[50px] flex flex-col max-w-[400px] justify-center items-center md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-3 md:max-w-full">
+					<CardsTestimonial className="flex flex-col justify-center items-center relative mb-24" />
 				</div>
 			</section>
 			{/* Latest News */}

@@ -3,7 +3,7 @@ import LineComponent from "./line";
 
 export const SubAboutDescription = () => {
 	return (
-		<div className="flex justify-center flex-col mx-5 gap-10 items-center my-5 sm:mx-20 lg:flex-row lg:mx-5">
+		<div className="flex justify-center flex-col mx-5 gap-10 items-center my-5 sm:mx-20 md:flex-row md:mx-5 md:w-[71%]">
 			<div>
 				<h3 className="font-bold text-1xl lg:text-2xl">Who we are</h3>
 				<p className="text-sm font-light mt-2">

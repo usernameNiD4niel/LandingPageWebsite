@@ -25,7 +25,7 @@ export default function Navbar() {
 				<ul
 					className={`flex justify-center h-screen z-30 bg-black gap-8 flex-col absolute w-full top-0 left-0 right-0 items-center ${
 						!isActive && "hidden"
-					} lg:w-fit lg:h-fit lg:justify-end lg:relative lg:flex lg:flex-row lg:mr-5`}>
+					} lg:w-fit lg:h-fit lg:justify-end lg:relative lg:flex lg:flex-row`}>
 					<li className="absolute top-1 right-1 m-3">
 						<Image
 							src="/close.svg"
@@ -79,7 +79,7 @@ export default function Navbar() {
 					<li>
 						<Link
 							href="/"
-							className="hover:bg-[#246d53] bg-[#098A5B] px-5 py-4 rounded-md text-1xl"
+							className="hover:bg-[#246d53] bg-[#098A5B] px-5 py-4 rounded-md text-1xl md:mx-5"
 							onClick={() => setIsActive(false)}>
 							Contact
 						</Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
 					width={25}
 					height={25}
 					alt="search icon"
-					className="mr-5 cursor-pointer"
+					className="mr-5 cursor-pointer md:mr-3"
 				/>
 				<Image
 					src="/menu.svg"

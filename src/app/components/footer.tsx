@@ -23,7 +23,7 @@ const Footer = (): JSX.Element => {
 	const utilityClass: string = "flex flex-col justify-center items-center";
 	return (
 		<>
-			<section className="flex justify-center gap-7 my-5 flex-col items-center sm:flex-row sm:gap-x-10 xl:gap-x-20">
+			<section className="flex justify-center gap-7 my-5 flex-col items-center sm:flex-row sm:gap-x-10 xl:gap-x-40">
 				<Image src="/logo.svg" width={70} height={70} alt="logo" />
 
 				<div className={utilityClass}>
